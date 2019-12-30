@@ -1,0 +1,54 @@
+:global(#app) {
+  min-height: 100%;
+}
+
+.layout {
+  min-height: 100%;
+  background-color: #FAFAFA;
+
+  :global(.ant-layout-content) {
+    padding: 20px 50px;
+    // margin: auto;
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 8px #f0f1f2;
+
+  :global(.ant-menu-horizontal) {
+    border-bottom: none;
+    line-height: 60px;
+  }
+
+  :global(.ant-menu) {
+    background-color: transparent;
+    // color: #fff;
+
+    :global(.ant-menu-item-selected) {
+      font-weight: 600;
+      border-bottom-width: 4px;
+    }
+  }
+
+}
+
+.logo {
+  width: auto;
+  height: 100%;
+  padding: 8px;
+  float: left;
+  line-height: 46px;
+  // color: rgba(0, 0, 0, 0.65);
+  color: #333;
+  font-weight: 600;
+  vertical-align: middle;
+
+  i {
+    font-size: 46px;
+    margin-right: 0;
+  }
+}
