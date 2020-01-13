@@ -1,9 +1,15 @@
-:global(#app) {
-  min-height: 100%;
+:global(body) {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+:global(a) {
+  font-weight: 600;
 }
 
 .layout {
-  min-height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   background-color: #FAFAFA;
 
   :global(.ant-layout-content) {
@@ -17,7 +23,7 @@
   z-index: 10;
   max-width: 100%;
   background: #ffffff;
-  box-shadow: 0 2px 8px #f0f1f2;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 
   :global(.ant-menu-horizontal) {
     border-bottom: none;
@@ -33,13 +39,21 @@
       border-bottom-width: 4px;
     }
   }
+}
 
+.content {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  background-color: transparent;
 }
 
 .logo {
   width: auto;
   height: 100%;
-  padding: 8px;
+  padding: 8px 0px;
   float: left;
   line-height: 46px;
   // color: rgba(0, 0, 0, 0.65);
