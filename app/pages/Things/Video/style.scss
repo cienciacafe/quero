@@ -1,11 +1,13 @@
 .container {
   width: 100%;
+  margin-bottom: 0;
   background-color: #252525;
   color: #fefefe;
   overflow: hidden;
   padding: 0;
   position: relative;
   box-sizing: border-box;
+  display: inline-block;
 }
 
 

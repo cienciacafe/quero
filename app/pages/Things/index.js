@@ -1,27 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Typography, Divider } from 'antd'
+
 
 import MainContainer from '~/containers/Main'
 import Video from './Video'
-import style from './style.scss'
+import PostText from './PostText'
 
-const { Title, Paragraph, Text } = Typography
 
-const TextParagraph = props => {
-  return (
-    <Paragraph className={style.paragraph}>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: props.text.replace(/\n/gm, '<br />')
-        }}
-      />
-    </Paragraph>
-  )
-}
-TextParagraph.propTypes = {
-  text: PropTypes.string
-}
 
 class Things extends React.Component {
   static propTypes = {
@@ -51,13 +36,13 @@ class Things extends React.Component {
   render() {
     const projectID = this.props.match?.params?.projectID
     const postID = this.props.match?.params?.postID
-    console.log(style)
+
     return (
       <MainContainer>
         <Video />
-        <Typography className={style.postText}>
-          <Title>"Quem irá nos salvar?" | 058</Title>
-          <TextParagraph
+        <PostText>
+          <PostText.Title>"Quem irá nos salvar?" | 058</PostText.Title>
+          <PostText.Paragraph
             text={`
             Uma breve discussão sobre o foco na personalidade e como muitas vezes distrai da busca por construção e soluções coletivas. Tem um beirinha de uma reflexão eleitoral também no vídeo.
 
@@ -69,16 +54,9 @@ class Things extends React.Component {
 
             Obrigada à galera que apoia no <a href="#">apoia.se/teseonze</a>`}
           />
-        </Typography>
+        </PostText>
         {/* testando: {projectID} {postID} */}
       </MainContainer>
-      // <div>
-      // {this.props.id && `Requested thing id: ${this.props.id}`}
-      //   <br />
-      //   <span>{this.state.isLoading && 'Loading data...'}</span>
-      //   <br />
-
-      // </div>
     )
   }
 }

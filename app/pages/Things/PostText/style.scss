@@ -1,3 +1,11 @@
+.container {
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+
+  background-color: #FFF;
+}
 .postText {
   max-width: 680px;
   width: 90vw;
@@ -9,7 +17,7 @@
     font-weight: normal;
 
     // line-height: 28px;
-    line-height: 1.58;
+    line-height: 1.4;
     letter-spacing: -0.004em;
 
     color: rgba(0, 0, 0, 0.85);
@@ -17,11 +25,15 @@
     overflow-wrap: break-word;
   }
 
-  h1 {
+  .title {
     color: #333333;
     font-size: 28px;
+    margin-bottom: 0;
+    font-weight: 600;
   }
+
   .paragraph {
     font-size: 20px;
+    padding: 0 5px;
   }
 }
