@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  background-color: #252525;
+  color: #fefefe;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.player {
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  position: relative;
+  // height: 450px;
+  padding: 0;
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    height: 480px;
+    max-height: calc(90vh - 64px);
+  }
+}

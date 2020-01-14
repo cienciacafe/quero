@@ -15,7 +15,7 @@ ReactDOM.render(
     )} />
     <Switch>
       <Route path="/home" component={HomePage} />
-      <Route path="/:projectID" component={ThingsPage} />
+      <Route path="/:projectID/:postID" component={ThingsPage} />
       <Route component={() => ('Página não encontrada!')} />
     </Switch>
   </div>

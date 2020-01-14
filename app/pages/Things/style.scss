@@ -1,0 +1,27 @@
+.postText {
+  max-width: 680px;
+  width: 90vw;
+  margin: auto;
+  font-family: "Noto Serif", Georgia, Cambria, "Times New Roman", Times, serif;
+
+  :global(.ant-typography) {
+    font-style: normal;
+    font-weight: normal;
+
+    // line-height: 28px;
+    line-height: 1.58;
+    letter-spacing: -0.004em;
+
+    color: rgba(0, 0, 0, 0.85);
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  h1 {
+    color: #333333;
+    font-size: 28px;
+  }
+  .paragraph {
+    font-size: 20px;
+  }
+}
