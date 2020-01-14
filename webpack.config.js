@@ -6,6 +6,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
+const ReactRefreshPlugin = require('react-refresh-webpack-plugin')
 
 const devMode = process.env.NODE_ENV !== 'production'
 
@@ -169,7 +170,19 @@ const config = {
 }
 
 if (devMode) {
-  config.plugins.push(new webpack.HotModuleReplacementPlugin())
+  // config.plugins.push(new webpack.HotModuleReplacementPlugin())
+  config.plugins.push(new ReactRefreshPlugin({ disableRefreshCheck: false }))
+  config.module.rules.push({
+    test: /BabelDetectComponent\.js/,
+    use: [
+      {
+        loader: require.resolve('babel-loader'),
+        options: {
+          plugins: [require.resolve('react-refresh/babel')],
+        },
+      },
+    ],
+  })
 }
 
 module.exports = config
