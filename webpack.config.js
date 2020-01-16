@@ -121,7 +121,7 @@ const config = {
                 'primary-color': '#E04854',
                 'link-color': '#E04854',
                 'layout-header-background': '#FAFAFA',
-                'border-radius-base': '2px'
+                'border-radius-base': '3px'
               }
             }
           }
