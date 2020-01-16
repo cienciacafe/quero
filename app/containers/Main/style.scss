@@ -3,7 +3,7 @@
   text-rendering: optimizeLegibility;
 }
 :global(a) {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .layout {
@@ -37,7 +37,7 @@
     // color: #fff;
 
     :global(.ant-menu-item-selected) {
-      font-weight: 600;
+      font-weight: bold;
       border-bottom-width: 4px;
     }
   }
@@ -51,11 +51,17 @@
   padding: 5px 0;
   :global(.ant-input-search) {
     height: 100%;
+    text-align: center;
     //   margin: 0 15px;
     // padding: 0 10px;
     // input {
     // }
     font-family: 'Noto Sans';
+
+    :global(.ant-input) {
+      background-color: #F2F3F4;
+      color: #737475;
+    }
   }
 }
 
@@ -105,7 +111,7 @@
   line-height: 46px;
   // color: rgba(0, 0, 0, 0.65);
   color: #333;
-  font-weight: 600;
+  font-weight: bold;
   vertical-align: middle;
 
   i {
