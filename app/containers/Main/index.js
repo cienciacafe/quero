@@ -36,7 +36,7 @@ class Things extends React.Component {
           </div>
           <div className={style.rightButtons}>
             <Button type="primary">
-            <Icon type="question-circle" />
+            Sobre o projeto
             </Button>
           </div>
         </Header>

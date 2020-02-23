@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import MainContainer from '~/containers/Main'
 import Video from './Video'
 import PostText from './PostText'
+import ShowInfo from './ShowInfo'
 
 
 
@@ -55,7 +56,14 @@ class Things extends React.Component {
             Obrigada à galera que apoia no <a href="#">apoia.se/teseonze</a>`}
           />
         </PostText>
-        {/* testando: {projectID} {postID} */}
+        <ShowInfo
+          name={'Tese Onze'}
+          description={'O Tese Onze é um canal focado em debater o senso comum, trazer pontos sobre sociologia e política, e acumular bagagem pra transformar o mundo. Apesar do conteúdo ser embasado em pesquisa, não se trata de um canal preparatório de conteúdo educacional, mas de informação e formação política.'}
+          avatarURL={'https://yt3.ggpht.com/a/AGF-l7_ouJsaeDOYyjNI2SDGa1XAGRdn9VFONgV4=s288-c-k-c0xffffffff-no-rj-mo'}
+          tags={['sociologia', 'esquerda', 'política', 'socialismo', 'brasil']}
+        />
+
+        {/* TODO: Adicionar bloco de conteúdo relacionado  */}
       </MainContainer>
     )
   }

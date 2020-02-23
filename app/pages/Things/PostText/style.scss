@@ -9,10 +9,11 @@
   padding: 15px 0 30px;
 }
 .postText {
-  max-width: 680px;
+  max-width: 720px;
   width: 90vw;
   margin: auto;
   font-family: "Noto Serif";
+  // hyphens: auto;
 
   :global(.ant-typography) {
     font-style: normal;

@@ -10,22 +10,19 @@
   display: inline-block;
 }
 
-
 .player {
   box-sizing: border-box;
   display: block;
   margin: auto;
   position: relative;
-  // height: 450px;
+  height: calc(90vh - 100px);
+  width: 100%;
+  max-width: 960px;
   padding: 0;
+}
 
-  iframe {
-    display: block;
-    margin: 0 auto;
-    box-sizing: border-box;
-    max-width: 800px;
-    width: 100%;
-    height: 480px;
-    max-height: calc(90vh - 64px);
-  }
+.reactPlayer{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
